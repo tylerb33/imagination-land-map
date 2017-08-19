@@ -1,0 +1,173 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #2DB1FF;
+$secondary-color: #A5CD3A;
+$tertiary-color: #FFA50B;
+$quarternary-color: #eeeeee;
+
+body {
+	background-color: $quarternary-color;
+}
+
+#attraction-column-parent {
+	width: 100%;
+	height: 95vh;
+	overflow: scroll;
+}
+
+
+#map-grid {
+	// background-color: $quarternary-color;
+	background-image: url("../images/ThemeMap.jpg");
+	background-size: cover;
+	-webkit-box-shadow: 26px 25px 37px -6px rgba(0,0,0,0.52);
+	-moz-box-shadow: 26px 25px 37px -6px rgba(0,0,0,0.52);
+	box-shadow: 26px 25px 37px -6px rgba(0,0,0,0.52);
+	border-radius: 5px;
+
+
+}
+
+//Attraction list styling
+.card {
+	padding: 12px;
+	-webkit-box-shadow: 26px 25px 37px -6px rgba(0,0,0,0.52);
+	-moz-box-shadow: 26px 25px 37px -6px rgba(0,0,0,0.52);
+	box-shadow: 26px 25px 37px -6px rgba(0,0,0,0.52);
+	margin-bottom: 7px;
+	border-radius: 5px;
+
+}
+
+//Eric: Dropdown Time Select Radio Styling
+
+#time-select-form { 
+	max-width: 200px;
+	margin: 10px 0;
+}
+.btn { 
+	//change coloring
+  padding:6px; width:100%; border-radius:2px;
+  background-color:#fff; color:#333;
+	border:1px solid #777;  text-align:left; 
+}
+.btn-select { 
+	position:relative;
+}
+
+.btn-select:after {
+  content:"";
+  display: block; 
+	position:absolute; 
+	top:50%; 
+	right:10px; 
+	margin-top:-2px;  
+  width: 0;
+  height: 0;
+  border-top: 4px solid #777;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.dropdown-menu-select { 
+	padding:0; 
+	margin-top:-2px; 
+	width:100%; 
+	border-radius:0 0 2px 2px; 
+	border-color:#777;
+}
+
+.dropdown-radio { 
+	display:block; 
+	position:relative;
+  margin:0;
+	width:100%; 
+	overflow:hidden;
+  border-bottom:1px solid #eaeaea; 
+  cursor:pointer;
+}
+.dropdown-radio input { 
+  visibility: hidden; 
+	position:absolute; 
+	left: -30px; 
+}
+
+.dropdown-radio i { 
+	font-weight:normal; 
+	font-style:normal; 
+	display:block; 
+	padding:7px; }
+
+
+/***************************************************/
+
+// Ted: Keep the grid boxes close to square (1:1 aspect ratio), and handle overflow w/ scroll.
+.grid-box-styling {
+	border: 1px solid black;
+	height: 30vh;
+	width: 20vw;
+	padding: 20px;
+	text-align: center;
+	overflow: scroll;
+	opacity:0.0;
+	color:whitesmoke;
+	border-radius: 5px;
+
+}
+
+h3{
+		opacity:1;
+	}
+
+.grid-box-styling:hover{
+	opacity:0.8;
+}
+
+.selected-border{
+	// border: 1px solid $secondary-color;
+	// -webkit-box-shadow: inset 0px 0px 0px 10px $secondary-color;
+	// -moz-box-shadow: inset 0px 0px 0px 10px $secondary-color;
+	// box-shadow: inset 0px 0px 0px 10px $secondary-color;
+	opacity:0.8;
+}
+//Header
+
+#theme-logo {
+	height: 160px;
+	width: 190px;
+	margin-top: -40px;
+}
+
+.form-inline {
+	margin: auto;
+	display: inline;
+}
+
+#search-input {
+	width: 600px;
+	margin-top: 2%;
+}
+
+#nav-bar {
+	background-color: $primary-color;
+}
+
+//Footer
+#currentTime {
+	margin-left: 27%;
+}
+
+#footerStyle {
+	background-color: $primary-color;
+	padding: 20px 20px;
+	margin-top: 5px;
+}
+
+.hidden {
+	display:none;	
+}
+
+#grid--empty {
+	color:whitesmoke;
+	background-color: $primary-color;
+}
+
